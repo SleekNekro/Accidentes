@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.example.proyecto.ui.dashboard.DashboardFragment"
+        android:name="com.example.proyecto.ui.report.ReportFragment"
         android:label="Report"
         tools:layout="@layout/fragment_report" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.proyecto.ui.notifications.NotificationsFragment"
+        android:name="com.example.proyecto.ui.map.MapsFragment"
         android:label="@string/map"
         tools:layout="@layout/fragment_map" />
 </navigation>

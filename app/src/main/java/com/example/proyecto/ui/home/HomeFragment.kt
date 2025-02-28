@@ -97,6 +97,7 @@ class HomeFragment : Fragment() {
             accidente.lalitud = binding!!.txtLatitud.getText().toString()
             accidente.longitud = binding!!.txtLongitud.getText().toString()
             accidente.problema = binding!!.txtDescripcio.getText().toString()
+            accidente.carles = "Hola Carles"
 
 
             val base: DatabaseReference = FirebaseDatabase.getInstance(

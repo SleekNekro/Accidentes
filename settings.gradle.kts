@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Avisor D'incivisme Definitivo"
+rootProject.name = "Proyecto"
 include(":app")
  

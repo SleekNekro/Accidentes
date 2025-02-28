@@ -1,4 +1,4 @@
-package com.example.proyecto.ui.dashboard
+package com.example.proyecto.ui.report
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -17,7 +17,7 @@ import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.FirebaseDatabase
 
-class DashboardFragment : Fragment() {
+class ReportFragment : Fragment() {
 
     private var _binding: FragmentReportBinding? = null
     private val binding get() = _binding!!
@@ -26,7 +26,7 @@ class DashboardFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
-        val dashboardViewModel = ViewModelProvider(this).get(DashboardViewModel::class.java)
+        val reportViewModel = ViewModelProvider(this).get(ReportViewModel::class.java)
         val sharedViewModel = ViewModelProvider(requireActivity()).get(SharedViewModel::class.java)
 
         _binding = FragmentReportBinding.inflate(inflater, container, false)
@@ -68,6 +68,7 @@ class DashboardFragment : Fragment() {
         ) {
             holder.binding.txtDescripcio.text = model.problema
             holder.binding.txtAdreca.text = model.direccio
+            holder.binding.carles.text = model.carles
         }
 
         override fun onCreateViewHolder(

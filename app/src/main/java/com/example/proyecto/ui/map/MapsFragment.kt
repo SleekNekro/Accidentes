@@ -1,4 +1,4 @@
-package com.example.proyecto.ui.notifications
+package com.example.proyecto.ui.map
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -28,7 +28,7 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 
-class NotificationsFragment : Fragment() {
+class MapsFragment : Fragment() {
 
     private var _binding: FragmentMapBinding? = null
 
@@ -45,8 +45,8 @@ class NotificationsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         FirebaseApp.initializeApp(context as Context)
-        val notificationsViewModel =
-            ViewModelProvider(this).get(NotificationsViewModel::class.java)
+        val mapsViewModel =
+            ViewModelProvider(this).get(MapsViewModel::class.java)
         _binding = FragmentMapBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
